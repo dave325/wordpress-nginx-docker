@@ -2,7 +2,7 @@ version: '3.6'
 services:
 
   wordpress:
-    image: wordpress:${WORDPRESS_VERSION:-php7.3-fpm}
+    build: ./wordpress
     volumes:
       - ./wordpress:/var/www/html
     environment:
