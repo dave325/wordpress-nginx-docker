@@ -40,5 +40,16 @@ services:
     depends_on:
       - wordpress
     restart: always
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    ports:
+     - 8081:80
+    depends_on: 
+      - database
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: password 
 volumes:
   mysql:
