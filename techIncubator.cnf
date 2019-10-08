@@ -1,0 +1,26 @@
+[ req ]
+distinguished_name  = req_distinguished_name
+x509_extensions     = root_ca
+
+[ req_distinguished_name ]
+countryName             = US
+countryName_min         = 2
+countryName_max         = 2
+stateOrProvinceName     = New-York
+localityName            = Flushing
+0.organizationName      = Tech Incubator
+organizationalUnitName  = Dev Team
+commonName              = 192.241.128.177
+commonName_max          = 64
+emailAddress            = davedataram@gmail.com
+emailAddress_max        = 64
+
+[ root_ca ]
+basicConstraints            = critical, CA:true
+
+subjectAltName = @alt_names
+extendedKeyUsage = serverAuth
+
+[alt_names]
+DNS.1   = localhost
+DNS.2   = 192.241.128.177
