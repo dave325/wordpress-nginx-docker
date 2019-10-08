@@ -61,3 +61,5 @@
 2019/10/07 16:23:19 [emerg] 1#1: SSL_CTX_load_verify_locations("/etc/letsencrypt/live/192.241.128.177/chain.pem") failed (SSL: error:02001002:system library:fopen:No such file or directory:fopen('/etc/letsencrypt/live/192.241.128.177/chain.pem','r') error:2006D080:BIO routines:BIO_new_file:no such file error:0B084002:x509 certificate routines:X509_load_cert_crl_file:system lib)
 2019/10/07 16:23:37 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/letsencrypt/live/192.241.128.177/fullchain.pem"
 2019/10/07 16:25:03 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/letsencrypt/live/192.241.128.177/fullchain.pem"
+2019/10/08 02:34:49 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/letsencrypt/live/192.241.128.177/fullchain.pem"
+2019/10/08 02:36:06 [warn] 1#1: "ssl_stapling" ignored, issuer certificate not found for certificate "/etc/letsencrypt/live/192.241.128.177/fullchain.pem"

@@ -45,8 +45,8 @@ fi
 
 # generate and add keys
 openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem \
-    -days 365 -nodes 
-
+    -days 365 -nodes -subj "/CN='${FQDN_OR_IP}'"
+    
 mv cert.pem ${CERTS}/live/${FQDN_OR_IP}/fullchain.pem
 mv key.pem ${CERTS}/live/${FQDN_OR_IP}/privkey.pem
 
