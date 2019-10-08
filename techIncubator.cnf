@@ -18,9 +18,3 @@ emailAddress_max        = 64
 [ root_ca ]
 basicConstraints            = critical, CA:true
 
-subjectAltName = @alt_names
-extendedKeyUsage = serverAuth
-
-[alt_names]
-DNS.1   = localhost
-DNS.2   = 192.241.128.177
