@@ -3,3 +3,4 @@
 !nginx/default*
 wordpress/wp-admin/
 wordpress/wp-includes/
+wordpress/wp-content/uploads/
