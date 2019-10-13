@@ -2,4 +2,4 @@
 !.env_example
 !nginx/default*
 wordpress/wp-admin/
-wordpress/wp-includes
+wordpress/wp-includes/

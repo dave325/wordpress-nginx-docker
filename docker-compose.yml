@@ -2,7 +2,7 @@ version: '3.6'
 services:
 
   wordpress:
-    image: wordpress:${WORDPRESS_VERSION:-php7.3-fpm}
+    image: dataramdevelopment/dsolutionswordpress
     volumes:
       - ./wordpress:/var/www/html
     environment:
@@ -27,7 +27,7 @@ services:
     restart: always
 
   nginx:
-    image: nginx:${NGINX_VERSION:-latest}
+    image: dataramdevelopment/dsolutionsnginx
     ports:
       - '80:80'
       - '443:443'
