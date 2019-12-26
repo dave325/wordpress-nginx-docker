@@ -23,6 +23,7 @@ if [ $(dirname ${SSL_CERTS_DIR}) = '.' ]; then
 else
   CERTS=${SSL_CERTS_DIR}
 fi
+
 if [ $(dirname ${SSL_CERTS_DATA_DIR}) = '.' ]; then
   CERTS_DATA=$REPO_DIR${SSL_CERTS_DATA_DIR:1}
 else
@@ -42,8 +43,8 @@ if [ ! -d "${CERTS_DATA}" ]; then
 fi
 
 docker run -t --rm \
-    -v ${CERTS}:/etc/letsencrypt \
-    -v ${CERTS_DATA}:/data/letsencrypt \
+    -v "${CERTS}":/etc/letsencrypt \
+    -v "${CERTS_DATA}":/data/letsencrypt \
     certbot/certbot \
     renew \
     --webroot --webroot-path=/data/letsencrypt

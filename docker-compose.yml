@@ -25,7 +25,6 @@ services:
       - MYSQL_PASSWORD=${MYSQL_PASSWORD:-password}
       - MYSQL_DATABASE=${MYSQL_DATABASE:-wordpress}
     restart: always
-
   nginx:
     image: nginx:${NGINX_VERSION:-latest}
     ports:
