@@ -307,8 +307,13 @@ body.colors-custom,
 	color: hsl( ' . $hue . ', ' . $saturation . ', 46% ); /* base: #767676; */
 }
 
+<<<<<<< HEAD
 .colors-custom :not( .mejs-button ) > button:hover,
 .colors-custom :not( .mejs-button ) > button:focus,
+=======
+.colors-custom button:hover:not( .mejs-container > button ),
+.colors-custom button:focus,
+>>>>>>> bb6500f10a7021d282df80c29c0872a75b57e076
 .colors-custom input[type="button"]:hover,
 .colors-custom input[type="button"]:focus,
 .colors-custom input[type="submit"]:hover,

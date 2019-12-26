@@ -5460,13 +5460,37 @@ body.page .main-navigation {
   list-style: none;
 }
 
+<<<<<<< HEAD
 .entry .entry-content .wp-block-archives li > a,
 .entry .entry-content .wp-block-categories li > a,
 .entry .entry-content .wp-block-latest-posts li > a {
+=======
+.entry .entry-content .wp-block-archives li,
+.entry .entry-content .wp-block-categories li,
+.entry .entry-content .wp-block-latest-posts li {
+  color: #767676;
+>>>>>>> bb6500f10a7021d282df80c29c0872a75b57e076
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: calc(22px * 1.125);
   font-weight: bold;
   line-height: 1.2;
+<<<<<<< HEAD
+=======
+  padding-bottom: 0.75rem;
+}
+
+.entry .entry-content .wp-block-archives li.menu-item-has-children, .entry .entry-content .wp-block-archives li:last-child,
+.entry .entry-content .wp-block-categories li.menu-item-has-children,
+.entry .entry-content .wp-block-categories li:last-child,
+.entry .entry-content .wp-block-latest-posts li.menu-item-has-children,
+.entry .entry-content .wp-block-latest-posts li:last-child {
+  padding-bottom: 0;
+}
+
+.entry .entry-content .wp-block-archives li a,
+.entry .entry-content .wp-block-categories li a,
+.entry .entry-content .wp-block-latest-posts li a {
+>>>>>>> bb6500f10a7021d282df80c29c0872a75b57e076
   text-decoration: none;
 }
 
@@ -5495,6 +5519,7 @@ body.page .main-navigation {
   counter-increment: submenu;
 }
 
+<<<<<<< HEAD
 .entry .entry-content .wp-block-latest-posts .wp-block-latest-posts__post-date {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 	font-size: 0.71111em;
@@ -5520,6 +5545,8 @@ body.page .main-navigation {
 	padding-bottom: 0.5rem;
 }
 
+=======
+>>>>>>> bb6500f10a7021d282df80c29c0872a75b57e076
 .entry .entry-content .wp-block-latest-posts.is-grid li {
   border-top: 2px solid #ccc;
   padding-top: 1rem;

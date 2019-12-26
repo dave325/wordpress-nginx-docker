@@ -228,12 +228,30 @@
 		padding: 0;
 		list-style: none;
 
+<<<<<<< HEAD
 		li > a {
+=======
+		li {
+			color: $color__text-light;
+>>>>>>> bb6500f10a7021d282df80c29c0872a75b57e076
 			@include font-family( $font__heading );
 			font-size: calc(#{$font__size_base} * #{$font__size-ratio});
 			font-weight: bold;
 			line-height: $font__line-height-heading;
+<<<<<<< HEAD
 			text-decoration: none;
+=======
+			padding-bottom: ( .75 * $size__spacing-unit );
+
+			&.menu-item-has-children,
+			&:last-child {
+				padding-bottom: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+>>>>>>> bb6500f10a7021d282df80c29c0872a75b57e076
 		}
 	}
 
@@ -260,6 +278,7 @@
 		@include nestedSubMenuPadding();
 	}
 
+<<<<<<< HEAD
 	//! Latest posts
 	.wp-block-latest-posts {
 
@@ -290,6 +309,11 @@
 		}
 
 		&.is-grid li {
+=======
+	//! Latest posts grid view
+	.wp-block-latest-posts.is-grid {
+		li {
+>>>>>>> bb6500f10a7021d282df80c29c0872a75b57e076
 			border-top: 2px solid $color__border;
 			padding-top: (1 * $size__spacing-unit);
 			margin-bottom: (2 * $size__spacing-unit);
